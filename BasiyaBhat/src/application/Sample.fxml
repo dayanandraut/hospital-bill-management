@@ -1,7 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-	
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.BorderPane?>
-	
-<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
-	<!-- TODO Add Nodes -->
+
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="application.SampleController">
+   <center>
+      <TitledPane animated="false" prefHeight="334.0" prefWidth="602.0" text="Basiya Bhat" BorderPane.alignment="CENTER">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="76.0" layoutX="11.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" width="578.0" />
+                  <Text fill="WHITE" layoutX="36.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome">
+                     <font>
+                        <Font name="Arial" size="32.0" />
+                     </font>
+                  </Text>
+                  <Button defaultButton="true" layoutX="211.0" layoutY="243.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="71.0" style="-fx-background-color: #40A3FB;" text="Login" textFill="#0a0a0a">
+                     <effect>
+                        <Glow level="0.0" />
+                     </effect>
+                  </Button>
+                  <Button layoutX="300.0" layoutY="243.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="71.0" style="-fx-background-color: #FB5D40;" text="Exit" />
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+   </center>
 </BorderPane>
